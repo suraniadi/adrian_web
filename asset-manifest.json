@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/adrian_web/static/js/main.d9069d57.chunk.js",
+    "main.js.map": "/adrian_web/static/js/main.d9069d57.chunk.js.map",
+    "runtime-main.js": "/adrian_web/static/js/runtime-main.f15072eb.js",
+    "runtime-main.js.map": "/adrian_web/static/js/runtime-main.f15072eb.js.map",
+    "static/js/2.a011838f.chunk.js": "/adrian_web/static/js/2.a011838f.chunk.js",
+    "static/js/2.a011838f.chunk.js.map": "/adrian_web/static/js/2.a011838f.chunk.js.map",
+    "index.html": "/adrian_web/index.html",
+    "precache-manifest.4d2e06d3d85e10af66304b23cd359575.js": "/adrian_web/precache-manifest.4d2e06d3d85e10af66304b23cd359575.js",
+    "service-worker.js": "/adrian_web/service-worker.js",
+    "static/js/2.a011838f.chunk.js.LICENSE.txt": "/adrian_web/static/js/2.a011838f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f15072eb.js",
+    "static/js/2.a011838f.chunk.js",
+    "static/js/main.d9069d57.chunk.js"
+  ]
+}
