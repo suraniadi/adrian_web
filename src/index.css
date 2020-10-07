@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Mechanical";
+  src: local("Mechanical"),
+    url(./fonts/mechanical-font/Mechanical-g5Y5.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: local("yesevaone"),
+    url(./fonts/yesevaone/YesevaOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("josefinsans"),
+    url(./fonts/josefinsans/JosefinSans-Regular.ttf) format("truetype");
+}
