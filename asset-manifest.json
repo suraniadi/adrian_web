@@ -1,19 +1,33 @@
 {
   "files": {
-    "main.js": "/adrian_web/static/js/main.261bbbf3.chunk.js",
-    "main.js.map": "/adrian_web/static/js/main.261bbbf3.chunk.js.map",
-    "runtime-main.js": "/adrian_web/static/js/runtime-main.f15072eb.js",
-    "runtime-main.js.map": "/adrian_web/static/js/runtime-main.f15072eb.js.map",
-    "static/js/2.a011838f.chunk.js": "/adrian_web/static/js/2.a011838f.chunk.js",
-    "static/js/2.a011838f.chunk.js.map": "/adrian_web/static/js/2.a011838f.chunk.js.map",
-    "index.html": "/adrian_web/index.html",
-    "precache-manifest.0c7fcc4ed5af2fb8dd5ccc81eb1f4bc3.js": "/adrian_web/precache-manifest.0c7fcc4ed5af2fb8dd5ccc81eb1f4bc3.js",
-    "service-worker.js": "/adrian_web/service-worker.js",
-    "static/js/2.a011838f.chunk.js.LICENSE.txt": "/adrian_web/static/js/2.a011838f.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.c3ef4df4.chunk.css",
+    "main.js": "/static/js/main.48131f70.chunk.js",
+    "main.js.map": "/static/js/main.48131f70.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bfca2edd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bfca2edd.js.map",
+    "static/js/2.6809c5ea.chunk.js": "/static/js/2.6809c5ea.chunk.js",
+    "static/js/2.6809c5ea.chunk.js.map": "/static/js/2.6809c5ea.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.955df1f8c721c47518c89d8ecc00dece.js": "/precache-manifest.955df1f8c721c47518c89d8ecc00dece.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c3ef4df4.chunk.css.map": "/static/css/main.c3ef4df4.chunk.css.map",
+    "static/js/2.6809c5ea.chunk.js.LICENSE.txt": "/static/js/2.6809c5ea.chunk.js.LICENSE.txt",
+    "static/media/Background.93481aef.svg": "/static/media/Background.93481aef.svg",
+    "static/media/Facebook.d00b8dd0.svg": "/static/media/Facebook.d00b8dd0.svg",
+    "static/media/Github.652e4dc2.svg": "/static/media/Github.652e4dc2.svg",
+    "static/media/Instagram.6dd72930.svg": "/static/media/Instagram.6dd72930.svg",
+    "static/media/index.css": "/static/media/YesevaOne-Regular.0f18d3f4.ttf",
+    "static/media/LinkedIn.e303c300.svg": "/static/media/LinkedIn.e303c300.svg",
+    "static/media/Logo.6ea79a9e.svg": "/static/media/Logo.6ea79a9e.svg",
+    "static/media/Mail.b9b68651.svg": "/static/media/Mail.b9b68651.svg",
+    "static/media/Portrait.png": "/static/media/Portrait.6b10e8cf.png",
+    "static/media/Triangle.f61274f1.svg": "/static/media/Triangle.f61274f1.svg",
+    "static/media/Twitter.5317ed96.svg": "/static/media/Twitter.5317ed96.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f15072eb.js",
-    "static/js/2.a011838f.chunk.js",
-    "static/js/main.261bbbf3.chunk.js"
+    "static/js/runtime-main.bfca2edd.js",
+    "static/js/2.6809c5ea.chunk.js",
+    "static/css/main.c3ef4df4.chunk.css",
+    "static/js/main.48131f70.chunk.js"
   ]
 }
