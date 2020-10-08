@@ -87,303 +87,302 @@ class Landing extends React.Component {
 
     return (
       <Page.Page>
-        <PageComponents.NoScrollHtmlStyle />
-        <Page.PageSpace height={120} />
+        <PageComponents.BlurrEffect>
+          <PageComponents.NoScrollHtmlStyle />
+          <Page.PageSpace height={120} />
 
-        <PageComponents.BackgroundContainer>
-          <Icon.Background
-            width={2843}
-            height={3350}
-            tabwidth={3000}
-            tabheight={3600}
-          />
-        </PageComponents.BackgroundContainer>
+          <PageComponents.BgWrapper>
+            <Icon.Background />
+          </PageComponents.BgWrapper>
 
-        <Page.PageSpace height={60} />
+          <Page.PageSpace height={60} />
 
-        <PageComponents.ContentContainer>
-          <PageComponents.TextContainer>
-            <Text
-              text={`Adrian-Petru Surani`}
-              isTitle
-              bold
-              size={[60, 40]}
-              lineHeight={[70, 50]}
-              titleTrans
-              executionTime="1.2s"
-              delayTime="80"
-            />
-            <Page.PageSpace height={25} />
-            <Text
-              text={`Building experience through experimentation.`}
-              isTitle
-              size={[34, 24]}
-              semifaded
-              lineHeight={[50, 35]}
-              titleTrans
-              executionTime="1.4s"
-              delayTime="86"
-            />
-            <Page.PageSpace height={25} />
-            <Text
-              text={`I'm a London-based Software Engineer passionate about impactful technology, specialising in custom web design and development.`}
-              size={[20, 16]}
-              lineHeight={[24, 22]}
-              maxWidth={500}
-              faded
-              thin
-              titleTrans
-              executionTime="1.6s"
-              delayTime="90"
-            />
-            <Page.PageSpace height={40} />
-
-            <Button
-              onClickLink
-              mailToLink
-              rectangle
-              label={"Get In Touch"}
-              white
-              radiusSet
-              titleTrans
-              executionTime="1.8s"
-              delayTime="91"
-            />
-          </PageComponents.TextContainer>
-
-          <Avatar titleTrans executionTime="2s" delayTime="95" />
-        </PageComponents.ContentContainer>
-
-        <Page.PageSpace height={300} />
-
-        <Fade duration={1200} distance="100px" bottom>
-          <>
-            <Separator label={"Experience."} lineWidth={300} width={800} />
-
-            <Page.PageSpace height={40} />
-
-            <PageComponents.WorkplacesContainer>
-              <PageComponents.HeaderContainer>
-                <PageComponents.TitlesContainer>
-                  {workplaces.map((workplace, idx) => (
-                    <Button
-                      key={idx}
-                      label={workplace}
-                      selected={idx === this.state.selectedTab}
-                      workplace
-                      minWidth={170}
-                      minWidthMobile={75}
-                      onClick={() => this.updateTab(idx)}
-                    />
-                  ))}
-                </PageComponents.TitlesContainer>
-                <PageComponents.TabLine selectedTab={this.state.selectedTab} />
-                <PageComponents.HardcoreLine />
-              </PageComponents.HeaderContainer>
-              <Page.PageSpace height={30} />
-              <PageComponents.WorktentContainer>
-                <PageComponents.JobDescription>
-                  <PageComponents.JobTitle>
-                    <Text
-                      text={selectedWorkspace.jobName}
-                      extraLarge
-                      isTitle
-                      purple
-                    />
-                  </PageComponents.JobTitle>
-                  <Page.PageSpace height={20} />
-                  {selectedWorkspace.descriptions.map((desc, idx) => (
-                    <PageComponents.Description key={idx}>
-                      <Icon.Arrow width={14} height={21} marginright="10" />
-                      <Text text={desc} large />
-                    </PageComponents.Description>
-                  ))}
-                </PageComponents.JobDescription>
-                {selectedWorkspace.link ? (
-                  <>
-                    <Page.PageSpace height={30} />
-                    <Button
-                      onClickLink={selectedWorkspace.link}
-                      externalLink
-                      label="Check them out"
-                      rectangle
-                      white
-                      radiusSet
-                    />
-                  </>
-                ) : (
-                  ""
-                )}
-              </PageComponents.WorktentContainer>
-            </PageComponents.WorkplacesContainer>
-          </>
-        </Fade>
-
-        <Page.PageSpace height={300} />
-
-        <Fade duration={1200} distance="100px" bottom>
-          <>
-            <Separator label={"About me."} lineWidth={300} left />
-
-            <Page.PageSpace height={40} />
-
-            <PageComponents.AboutContainer>
+          <PageComponents.ContentContainer>
+            <PageComponents.TextContainer>
               <Text
-                text={
-                  "Hello! I’m Adrian, a Software Engineer studying in London, UK."
-                }
-                large
+                text={`Adrian-Petru Surani`}
+                isTitle
+                bold
+                size={[60, 40]}
+                lineHeight={[70, 50]}
+                titleTrans
+                executionTime={1.2}
+                delayTime={80}
               />
+              <Page.PageSpace height={25} />
               <Text
-                text={
-                  "Learning about what makes a great engineer, understanding the underlying principles and experimenting are paramount to me!"
-                }
-                large
+                text={`Building experience through experimentation.`}
+                isTitle
+                size={[34, 24]}
+                semifaded
+                lineHeight={[50, 35]}
+                titleTrans
+                executionTime={1.4}
+                delayTime={86}
               />
+              <Page.PageSpace height={25} />
               <Text
-                text={
-                  "I started out with logic puzzles as a kid, moved on to algorithms and data structures during high-school and soon discovered that I really enjoy building and analyzing well-designed websites and applications."
-                }
-                large
+                text={`I'm a London-based Software Engineer passionate about impactful technology, specialising in custom web design and development.`}
+                size={[20, 16]}
+                lineHeight={[24, 22]}
+                maxWidth={500}
+                faded
+                thin
+                titleTrans
+                executionTime={1.6}
+                delayTime={90}
               />
-              <PageComponents.TechStack>
+              <Page.PageSpace height={40} />
+
+              <Button
+                externalLink
+                onClickLink="https://google.com"
+                rectangle
+                label={"Get In Touch"}
+                white
+                radiusSet
+                titleTrans
+                executionTime={1.8}
+                delayTime={91}
+              />
+            </PageComponents.TextContainer>
+
+            <Avatar titleTrans executionTime={2} delayTime={90} />
+          </PageComponents.ContentContainer>
+
+          <Page.PageSpace height={300} />
+
+          <Fade duration={1200} distance="100px" bottom>
+            <>
+              <Separator label={"Experience."} lineWidth={300} width={800} />
+
+              <Page.PageSpace height={40} />
+
+              <PageComponents.WorkplacesContainer>
+                <PageComponents.HeaderContainer>
+                  <PageComponents.TitlesContainer>
+                    {workplaces.map((workplace, idx) => (
+                      <Button
+                        key={idx}
+                        label={workplace}
+                        selected={idx === this.state.selectedTab}
+                        workplace
+                        minWidth={170}
+                        minWidthMobile={75}
+                        onClick={() => this.updateTab(idx)}
+                      />
+                    ))}
+                  </PageComponents.TitlesContainer>
+                  <PageComponents.TabLine
+                    selectedTab={this.state.selectedTab}
+                  />
+                  <PageComponents.HardcoreLine />
+                </PageComponents.HeaderContainer>
+                <Page.PageSpace height={30} />
+                <PageComponents.WorktentContainer>
+                  <PageComponents.JobDescription>
+                    <PageComponents.JobTitle>
+                      <Text
+                        text={selectedWorkspace.jobName}
+                        extraLarge
+                        isTitle
+                        purple
+                      />
+                    </PageComponents.JobTitle>
+                    <Page.PageSpace height={20} />
+                    {selectedWorkspace.descriptions.map((desc, idx) => (
+                      <PageComponents.Description key={idx}>
+                        <Icon.Arrow width={14} height={21} marginright="10" />
+                        <Text text={desc} large />
+                      </PageComponents.Description>
+                    ))}
+                  </PageComponents.JobDescription>
+                  {selectedWorkspace.link ? (
+                    <>
+                      <Page.PageSpace height={30} />
+                      <Button
+                        onClickLink={selectedWorkspace.link}
+                        externalLink
+                        label="Check them out"
+                        rectangle
+                        white
+                        radiusSet
+                      />
+                    </>
+                  ) : (
+                    ""
+                  )}
+                </PageComponents.WorktentContainer>
+              </PageComponents.WorkplacesContainer>
+            </>
+          </Fade>
+
+          <Page.PageSpace height={300} />
+
+          <Fade duration={1200} distance="100px" bottom>
+            <>
+              <Separator label={"About me."} lineWidth={300} left />
+
+              <Page.PageSpace height={40} />
+
+              <PageComponents.AboutContainer>
                 <Text
                   text={
-                    "Some of the technologies that I've been working with are:"
+                    "Hello! I’m Adrian, a Software Engineer studying in London, UK."
                   }
                   large
                 />
+                <Text
+                  text={
+                    "Learning about what makes a great engineer, understanding the underlying principles and experimenting are paramount to me!"
+                  }
+                  large
+                />
+                <Text
+                  text={
+                    "I started out with logic puzzles as a kid, moved on to algorithms and data structures during high-school and soon discovered that I really enjoy building and analyzing well-designed websites and applications."
+                  }
+                  large
+                />
+                <PageComponents.TechStack>
+                  <Text
+                    text={
+                      "Some of the technologies that I've been working with are:"
+                    }
+                    large
+                  />
 
-                <Page.PageSpace height={25} />
+                  <Page.PageSpace height={25} />
 
-                <PageComponents.TechnologiesContainer>
-                  {technologies.map((tech, idx) => (
-                    <PageComponents.TechLine key={idx}>
-                      <Icon.Arrow width={14} height={21} />
-                      <Text text={tech} small />
-                    </PageComponents.TechLine>
-                  ))}
-                </PageComponents.TechnologiesContainer>
-              </PageComponents.TechStack>
-            </PageComponents.AboutContainer>
-          </>
-        </Fade>
-        <Page.PageSpace height={300} />
+                  <PageComponents.TechnologiesContainer>
+                    {technologies.map((tech, idx) => (
+                      <PageComponents.TechLine key={idx}>
+                        <Icon.Arrow width={14} height={21} />
+                        <Text text={tech} small />
+                      </PageComponents.TechLine>
+                    ))}
+                  </PageComponents.TechnologiesContainer>
+                </PageComponents.TechStack>
+              </PageComponents.AboutContainer>
+            </>
+          </Fade>
+          <Page.PageSpace height={300} />
 
-        <Fade duration={1200} distance="100px" bottom>
-          <>
-            <Separator label={"Contact me."} width={600} lineWidth={250} />
+          <Fade duration={1200} distance="100px" bottom>
+            <>
+              <Separator label={"Contact me."} width={600} lineWidth={250} />
 
-            <Page.PageSpace height={40} />
+              <Page.PageSpace height={40} />
 
-            <PageComponents.ContactContainer>
-              <Text
-                text=" I am looking forward to new challenges and oportunities to explore the tech world! If you need any help with building a website or mobile app or you just want to ask me a question, please do email me!"
-                center
-                maxWidth={700}
-                size={[20, 16]}
-                lineHeight={[25, 18]}
-              />
+              <PageComponents.ContactContainer>
+                <Text
+                  text=" I am looking forward to new challenges and oportunities to explore the tech world! If you need any help with building a website or mobile app or you just want to ask me a question, please do email me!"
+                  center
+                  maxWidth={700}
+                  size={[20, 16]}
+                  lineHeight={[25, 18]}
+                />
 
-              <Avatar />
+                <Avatar />
 
-              <PageComponents.LogosContainer>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="https://www.facebook.com/adi.surani.3/"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.Facebook
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197,1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="https://github.com/suraniadi"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.Github
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197, 1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="https://www.instagram.com/suraniadi/"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.Instagram
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197, 1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/Adrian35187406"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.Twitter
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197, 1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="mailto:surani.adi7@gmail.com"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.Mail
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197, 1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/adrian-surani-b96622104/"
-                >
-                  <PageComponents.IconsHandler>
-                    <Icon.LinkedIn
-                      width={20}
-                      height={20}
-                      hover={`rgba(152,75,197, 1)`}
-                      color={`black`}
-                    />
-                  </PageComponents.IconsHandler>
-                </a>
-              </PageComponents.LogosContainer>
-            </PageComponents.ContactContainer>
-          </>
-        </Fade>
+                <PageComponents.LogosContainer>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/adi.surani.3/"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.Facebook
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197,1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="https://github.com/suraniadi"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.Github
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197, 1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/suraniadi/"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.Instagram
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197, 1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/Adrian35187406"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.Twitter
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197, 1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="mailto:surani.adi7@gmail.com"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.Mail
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197, 1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/adrian-surani-b96622104/"
+                  >
+                    <PageComponents.IconsHandler>
+                      <Icon.LinkedIn
+                        width={20}
+                        height={20}
+                        hover={`rgba(152,75,197, 1)`}
+                        color={`black`}
+                      />
+                    </PageComponents.IconsHandler>
+                  </a>
+                </PageComponents.LogosContainer>
+              </PageComponents.ContactContainer>
+            </>
+          </Fade>
 
-        <Page.PageSpace height={50} />
+          <Page.PageSpace height={50} />
+        </PageComponents.BlurrEffect>
       </Page.Page>
     );
   }

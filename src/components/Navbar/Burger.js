@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import RightNav from "./RightNav";
@@ -42,23 +42,17 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = (props) => {
-  const [open, setOpen] = useState(false);
-
-  const burgerToggle = () => {
-    setOpen(!open);
-  };
-
   return (
     <>
-      <StyledBurger open={open} onClick={burgerToggle}>
+      <StyledBurger open={props.burgerOpen} onClick={props.burgerToggle}>
         <div />
         <div />
         <div />
       </StyledBurger>
       <RightNav
-        open={open}
-        onLinkClick={props.onLinkClick}
-        burgerToggle={burgerToggle}
+        open={props.burgerOpen}
+        onLinkScrollClick={props.onLinkScrollClick}
+        burgerToggle={props.burgerToggle}
       />
     </>
   );

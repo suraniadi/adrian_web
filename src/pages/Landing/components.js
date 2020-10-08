@@ -1,22 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { down } from "styled-breakpoints";
 
-export const BackgroundContainer = styled.div`
-  position: absolute;
-  top: -600px;
-  left: -800px;
-  z-index: -1;
-
-  ${down("tablet")} {
-    left: -1200px;
-    top: -400px;
-  }
-`;
-
 export const NoScrollHtmlStyle = createGlobalStyle`
-  html {
+  body, html {
     overflow-x: hidden;
-    
   }
 `;
 
@@ -24,6 +11,7 @@ export const ContentContainer = styled.div`
   width: 100%;
   min-height: 650px;
   padding: 0px 40px;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
@@ -31,7 +19,7 @@ export const ContentContainer = styled.div`
   align-items: flex-start;
 
   ${down("tablet")} {
-    padding: 0px 30px;
+    padding: 0px 25px;
     flex-direction: column;
     align-items: center;
   }
@@ -47,10 +35,10 @@ export const TextContainer = styled.div`
 export const WorkplacesContainer = styled.div`
   width: auto;
 
-  padding: 0px 20px;
+  padding: 0px 40px;
 
   ${down("tablet")} {
-    padding: 0px 10px;
+    padding: 0px 25px;
   }
 
   display: flex;
@@ -143,8 +131,8 @@ export const AboutContainer = styled.div`
 
   ${down("tablet")} {
     width: auto;
-    padding: 0px 30px;
-    min-height: 400px;
+    padding: 0px 25px;
+    min-height: 550px;
   }
 
   display: flex;
@@ -182,6 +170,7 @@ export const TechStack = styled.div`
 export const ContactContainer = styled.div`
   width: 600px;
   min-height: 400px;
+  padding: 0px 40px;
 
   display: flex;
   justify-content: space-between;
@@ -190,6 +179,7 @@ export const ContactContainer = styled.div`
 
   ${down("tablet")} {
     width: auto;
+    padding: 0px 25px;
   }
 `;
 
@@ -251,4 +241,25 @@ export const JobDescription = styled.div`
 
 export const JobTitle = styled.div`
   margin-left: 23.25px;
+`;
+
+export const BgWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 3230px;
+  overflow: hidden;
+`;
+
+export const BlurrEffect = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ${(props) =>
+    props.burgerOpen &&
+    `
+    filter : blur(3px);
+  `}
 `;

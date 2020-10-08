@@ -24,7 +24,7 @@ export const ContentContainer = styled.div`
 
     ${down("tablet")} {
     width: auto;
-    padding: 0px 10px;
+    padding: 0px 25px;
   }
 `;
 

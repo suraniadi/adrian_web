@@ -133,14 +133,14 @@ const ButtonContainer = styled.div`
     &:hover {
     background: #ffffff;
     }
-    `}
+    `} 
 
-    ${(props) =>
+     ${(props) =>
     props.titleTrans &&
     props.executionTime &&
     props.delayTime &&
     css`
-      animation: ${(props) => move(props.delayTime)} ${props.executionTime}
+      animation: ${(props) => move(props.delayTime)} ${props.executionTime}s
         linear;
     `}
 `;
@@ -187,7 +187,7 @@ export const Button = (props) => {
     ) : props.mailToLink ? (
       <a
         rel="noopener noreferrer"
-        style={{ textDecoration: "none" }}
+        style={{ textDecoration: "none", pointerEvents: "none" }}
         href="mailto:surani.adi7@gmail.com"
       >
         {content}

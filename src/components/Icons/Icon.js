@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { down } from "styled-breakpoints";
 
-import { ReactComponent as BackgroundSource } from "./images/Background.svg";
+import BackgroundSource from "./images/Background.svg";
 import { ReactComponent as LogoSource } from "./images/Logo.svg";
 import { ReactComponent as FacebookSource } from "./images/Facebook.svg";
 import { ReactComponent as GithubSource } from "./images/Github.svg";
@@ -55,24 +55,25 @@ const IconStyle = css`
   }
 `;
 
-const BgStyle = css`
-  width: ${(props) => (props.width ? props.width : 30)}px;
-  height: ${(props) =>
-    props.height ? props.height : props.width ? props.width : 30}px;
+const Background = styled.div`
+  width: 2843px;
+  height: 3450px;
+
+  position: absolute;
+  top: 0px;
+  left: -800px;
+  z-index: -1;
 
   ${down("tablet")} {
-    width: ${(props) => (props.tabwidth ? props.tabwidth : 600)}px;
-    height: ${(props) =>
-      props.tabheight
-        ? props.tabheight
-        : props.tabwidth
-        ? props.tabwidth
-        : 1500}px;
+    width: 2800px;
+    height: 3800px;
+    left: -1200px;
+    top: -400px;
   }
-`;
 
-const Background = styled(BackgroundSource)`
-  ${BgStyle}
+  background-image: url(${BackgroundSource});
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 const Logo = styled(LogoSource)`

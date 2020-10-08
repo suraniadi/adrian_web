@@ -90,6 +90,11 @@ const Page = (props) => {
   const prevScrollY = useRef(0);
 
   const [hideBar, setHide] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const burgerToggle = () => {
+    setOpen(!open);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,13 +112,36 @@ const Page = (props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [hideBar]);
 
+  useEffect(() => {
+    window.scroll({ left: 0, top: prevScrollY.current, behavior: "smooth" });
+    // window.addEventListener("scroll", () => {
+    //   console.log(window.pageYOffset);
+    // });
+  }, [prevScrollY.current]);
+
+  const handleScrollY = (yOffset) => {
+    prevScrollY.current = yOffset;
+  };
+
   return (
     <Container>
       <BoxSizingStyle />
-      <Navbar hideBar={hideBar} />
-      {props.children}
+      <Navbar
+        burgerToggle={() => burgerToggle()}
+        burgerOpen={open}
+        hideBar={hideBar}
+        onLinkScrollClick={(yOffset) => {
+          setHide(true);
+          handleScrollY(yOffset);
+        }}
+      />
+      {React.cloneElement(props.children, {
+        burgerOpen: open,
+      })}
       <Text
-        text={"Inspired by many. Built by Adrian-Petru Surani"}
+        text={
+          "Design inspired by Brittany Chiang, which I truly admire. Built by Adrian-Petru Surani"
+        }
         size={(14, 12)}
         faded
         maxWidth={300}

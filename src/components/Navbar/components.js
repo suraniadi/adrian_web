@@ -3,9 +3,8 @@ import { down } from "styled-breakpoints";
 
 export const NavbarContainer = styled.div`
   position: fixed;
-  z-index: 1;
+  z-index: 11;
   opacity: 1;
-  background: #ffffff;
 
   width: 100%;
   padding: 10px 30px;
@@ -67,4 +66,28 @@ export const InitialContainer = styled.div`
     height: 200px;
     flex-direction: column;
   }
+`;
+
+export const BlurredNav = styled.div`
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  top: -5px;
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.1s linear 0s, transform 0.1s linear 0s;
+
+  ${(props) =>
+    props.hide &&
+    `
+    opacity: 0;
+    transform: translateY(110);
+  `}
 `;

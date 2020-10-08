@@ -30,11 +30,6 @@ const Content = styled.div`
   font-size: ${(props) => props.bodySize.desktop}px;
   font-weight: ${(props) => props.bodyWeight};
 
-  ${down("tablet")} {
-    font-size: ${(props) => props.bodySize.tablet}px;
-    line-height: ${(props) => props.lineHeight.tablet}px;
-  }
-
   ${(props) =>
     props.onClick &&
     `
@@ -100,12 +95,25 @@ const Content = styled.div`
     props.executionTime &&
     props.delayTime &&
     css`
-      animation: ${(props) => move(props.delayTime)} ${props.executionTime}
+      animation: ${(props) => move(props.delayTime)} ${props.executionTime}s
         linear;
     `}
 
+    ${down("tablet")} {
+    font-size: ${(props) => props.bodySize.tablet}px;
+    line-height: ${(props) => props.lineHeight.tablet}px;
 
-    .highlight {
+    ${(props) =>
+      props.titleTrans &&
+      props.executionTime &&
+      props.delayTime &&
+      css`
+        animation: ${(props) => move(props.delayTime * 0.7)}
+          ${props.executionTime * 1.2}s linear;
+      `}
+  }
+
+  .highlight {
     color: #984bc5;
     font-weight: 700;
   }
