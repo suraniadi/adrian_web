@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Fade from "react-reveal/Fade";
 
 import * as PageComponents from "./components";
@@ -95,7 +95,7 @@ class Landing extends React.Component {
             width={2843}
             height={3350}
             tabwidth={3000}
-            tabheight={3800}
+            tabheight={3600}
           />
         </PageComponents.BackgroundContainer>
 
@@ -127,9 +127,9 @@ class Landing extends React.Component {
             <Page.PageSpace height={25} />
             <Text
               text={`I'm a London-based Software Engineer passionate about impactful technology, specialising in custom web design and development.`}
-              size={[24, 18]}
-              lineHeight={[30, 25]}
-              maxWidth={600}
+              size={[20, 16]}
+              lineHeight={[24, 22]}
+              maxWidth={500}
               faded
               thin
               titleTrans
@@ -160,7 +160,7 @@ class Landing extends React.Component {
           <>
             <Separator label={"Experience."} lineWidth={300} width={800} />
 
-            <Page.PageSpace height={20} />
+            <Page.PageSpace height={40} />
 
             <PageComponents.WorkplacesContainer>
               <PageComponents.HeaderContainer>
@@ -170,7 +170,6 @@ class Landing extends React.Component {
                       key={idx}
                       label={workplace}
                       selected={idx === this.state.selectedTab}
-                      faded
                       workplace
                       minWidth={170}
                       minWidthMobile={75}
@@ -185,13 +184,18 @@ class Landing extends React.Component {
               <PageComponents.WorktentContainer>
                 <PageComponents.JobDescription>
                   <PageComponents.JobTitle>
-                    <Text text={selectedWorkspace.jobName} large purple />
+                    <Text
+                      text={selectedWorkspace.jobName}
+                      extraLarge
+                      isTitle
+                      purple
+                    />
                   </PageComponents.JobTitle>
                   <Page.PageSpace height={20} />
                   {selectedWorkspace.descriptions.map((desc, idx) => (
                     <PageComponents.Description key={idx}>
                       <Icon.Arrow width={14} height={21} marginright="10" />
-                      <Text text={desc} small />
+                      <Text text={desc} large />
                     </PageComponents.Description>
                   ))}
                 </PageComponents.JobDescription>
@@ -221,7 +225,7 @@ class Landing extends React.Component {
           <>
             <Separator label={"About me."} lineWidth={300} left />
 
-            <Page.PageSpace height={20} />
+            <Page.PageSpace height={40} />
 
             <PageComponents.AboutContainer>
               <Text
@@ -250,13 +254,13 @@ class Landing extends React.Component {
                   large
                 />
 
-                <Page.PageSpace height={10} />
+                <Page.PageSpace height={25} />
 
                 <PageComponents.TechnologiesContainer>
                   {technologies.map((tech, idx) => (
                     <PageComponents.TechLine key={idx}>
                       <Icon.Arrow width={14} height={21} />
-                      <Text text={tech} />
+                      <Text text={tech} small />
                     </PageComponents.TechLine>
                   ))}
                 </PageComponents.TechnologiesContainer>
@@ -270,14 +274,14 @@ class Landing extends React.Component {
           <>
             <Separator label={"Contact me."} width={600} lineWidth={250} />
 
-            <Page.PageSpace height={20} />
+            <Page.PageSpace height={40} />
 
             <PageComponents.ContactContainer>
               <Text
-                text="If you need any help with building a website or mobile app or you just want to ask me a question, please do email me!"
+                text=" I am looking forward to new challenges and oportunities to explore the tech world! If you need any help with building a website or mobile app or you just want to ask me a question, please do email me!"
                 center
                 maxWidth={700}
-                size={[16, 12]}
+                size={[20, 16]}
                 lineHeight={[25, 18]}
               />
 

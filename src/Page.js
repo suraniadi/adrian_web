@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { down } from "styled-breakpoints";
-import _ from "lodash";
 
 import Navbar from "./components/Navbar";
 import Text from "./components/Text";
@@ -96,8 +95,8 @@ const Page = (props) => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
-      if (scrollTop - prevScrollY.current >= 0 && !hideBar) setHide(true);
-      else if (scrollTop - prevScrollY.current < 0 && hideBar) setHide(false);
+      if (scrollTop - prevScrollY.current > 10 && !hideBar) setHide(true);
+      else if (scrollTop - prevScrollY.current < -10 && hideBar) setHide(false);
 
       prevScrollY.current = scrollTop;
 

@@ -144,7 +144,7 @@ export const AboutContainer = styled.div`
   ${down("tablet")} {
     width: auto;
     padding: 0px 30px;
-    min-height: 600px;
+    min-height: 400px;
   }
 
   display: flex;
@@ -232,6 +232,10 @@ export const IconsHandler = styled.div`
     transition: opacity 0.2s linear 0.05s, transform 0.2s linear 0.05s;
 
     transform: translate3d(0, 0, 0);
+  }
+
+  ${down("tablet")} {
+    pointer-events: none;
   }
 `;
 

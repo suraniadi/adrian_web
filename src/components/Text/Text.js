@@ -114,7 +114,7 @@ const Content = styled.div`
 const Text = (props) => {
   let text = props.text;
 
-  text = text.replace(/[\*][\S\s]*[\*]/g, (word) => {
+  text = text.replace(/[*][\S\s]*[*]/g, (word) => {
     const str = word.replaceAll("*", "");
     return `<span class="highlight">${str}</span>`;
   });
@@ -159,8 +159,8 @@ const Text = (props) => {
     }
 
     if (props.extraLarge) {
-      bodySize.desktop = 22;
-      bodySize.tablet = 20;
+      bodySize.desktop = 24;
+      bodySize.tablet = 22;
     }
   }
 

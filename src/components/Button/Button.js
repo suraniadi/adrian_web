@@ -23,7 +23,7 @@ const ButtonLabel = styled.p`
   font-family: Josefin Sans;
   text-align: center;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 
   ${(props) =>

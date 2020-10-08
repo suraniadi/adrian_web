@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-import Page from "../../Page";
 import Text from "../Text";
 import * as PageComponents from "./components";
 
