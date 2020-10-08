@@ -81,7 +81,7 @@ const RightNav = (props) => {
           <Button
             label={"Resume"}
             onClickLink={
-              "https://docs.google.com/document/d/1Uw-p6mezaJMEMd9iloV3SmzXoSG-BHZizt6w02sFnY4/edit?usp=sharing"
+              "https://docs.google.com/document/d/1bkrS6fmKnO6RoFMbdGtK0GzhHII3gawhpZcyokpWzDs/edit?usp=sharing"
             }
             padded
             radiusSet={true}
