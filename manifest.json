@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
+  "short_name": "Adrian Surani",
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "Bitmoji1.ico",
+      "src": "Bitmoji1.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "Bitmoji1.png",
       "type": "image/png",
       "sizes": "512x512"
     }
