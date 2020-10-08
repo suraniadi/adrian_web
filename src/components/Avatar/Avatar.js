@@ -28,7 +28,7 @@ const AvatarContainer = styled.div`
     props.executionTime &&
     props.delayTime &&
     css`
-      animation: ${(props) => move(props.delayTime)} ${props.executionTime}
+      animation: ${(props) => move(props.delayTime)} ${props.executionTime}s
         linear;
     `}
 `;

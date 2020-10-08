@@ -19,8 +19,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.2s"
-              delayTime="0"
+              executionTime={0.2}
+              delayTime={0}
             />
             <Text
               text={"About"}
@@ -29,8 +29,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.4s"
-              delayTime="50"
+              executionTime={0.4}
+              delayTime={50}
             />
             <Text
               text={"Contact"}
@@ -39,8 +39,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.6s"
-              delayTime="63"
+              executionTime={0.6}
+              delayTime={63}
             />
           </ShowAt>
           <ShowAt breakpoint="small">
@@ -52,8 +52,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.2s"
-              delayTime="0"
+              executionTime={0.2}
+              delayTime={0}
             />
             <Text
               text={"About"}
@@ -63,8 +63,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.4s"
-              delayTime="50"
+              executionTime={0.4}
+              delayTime={50}
             />
             <Text
               text={"Contact"}
@@ -74,8 +74,8 @@ const RightNav = (props) => {
               }}
               hoverable
               titleTrans
-              executionTime="0.6s"
-              delayTime="63"
+              executionTime={0.6}
+              delayTime={63}
             />
           </ShowAt>
           <Button
@@ -89,8 +89,8 @@ const RightNav = (props) => {
             externalLink
             minWidth={100}
             titleTrans
-            executionTime="0.8s"
-            delayTime="71"
+            executionTime={0.8}
+            delayTime={71}
           />
         </PageComponents.InitialContainer>
       </PageComponents.LinksContainer>

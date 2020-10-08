@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
   opacity: 1;
 
   width: 100%;
-  padding: 10px 30px;
+  padding: 15px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
   `}
 
   ${down("tablet")} {
-    padding: 5px 10px;
+    padding: 15px 25px;
   }
 `;
 

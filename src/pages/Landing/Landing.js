@@ -135,8 +135,8 @@ class Landing extends React.Component {
               <Page.PageSpace height={40} />
 
               <Button
-                externalLink
-                onClickLink="https://google.com"
+                mailToLink
+                onClickLink
                 rectangle
                 label={"Get In Touch"}
                 white

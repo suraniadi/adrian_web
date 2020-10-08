@@ -13,8 +13,8 @@ function Navbar(props) {
         topPage={props.topPage}
       >
         <Icon.Logo
-          width={50}
-          height={50}
+          width={35}
+          height={35}
           hover={`rgba(152,75,197, 0.3)`}
           color={`none`}
           onClick={() => {

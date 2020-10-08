@@ -123,7 +123,7 @@ const Text = (props) => {
   let text = props.text;
 
   text = text.replace(/[*][\S\s]*[*]/g, (word) => {
-    const str = word.replaceAll("*", "");
+    const str = word.replace(/[*]/g, "");
     return `<span class="highlight">${str}</span>`;
   });
 

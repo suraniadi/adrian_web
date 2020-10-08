@@ -39,6 +39,15 @@ const ButtonLabel = styled.p`
     `}
 
     ${(props) =>
+    props.workplace &&
+    css`
+      font-size: 16px;
+      ${down("tablet")} {
+        font-size: 14px;
+      }
+    `}
+
+    ${(props) =>
     props.isLarge &&
     `
     font-size: 22px;
@@ -164,6 +173,7 @@ export const Button = (props) => {
       <ButtonLabel
         selected={props.selected}
         coloured={props.coloured}
+        workplace={props.workplace}
         faded={props.faded}
         white={props.white}
         purple={props.purple}
@@ -187,7 +197,7 @@ export const Button = (props) => {
     ) : props.mailToLink ? (
       <a
         rel="noopener noreferrer"
-        style={{ textDecoration: "none", pointerEvents: "none" }}
+        style={{ textDecoration: "none" }}
         href="mailto:surani.adi7@gmail.com"
       >
         {content}
