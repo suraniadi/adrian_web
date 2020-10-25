@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c3ef4df4.chunk.css",
-    "main.js": "/static/js/main.b892dab8.chunk.js",
-    "main.js.map": "/static/js/main.b892dab8.chunk.js.map",
+    "main.js": "/static/js/main.9db6ff31.chunk.js",
+    "main.js.map": "/static/js/main.9db6ff31.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bfca2edd.js",
     "runtime-main.js.map": "/static/js/runtime-main.bfca2edd.js.map",
-    "static/js/2.09289fc2.chunk.js": "/static/js/2.09289fc2.chunk.js",
-    "static/js/2.09289fc2.chunk.js.map": "/static/js/2.09289fc2.chunk.js.map",
+    "static/js/2.60b711dd.chunk.js": "/static/js/2.60b711dd.chunk.js",
+    "static/js/2.60b711dd.chunk.js.map": "/static/js/2.60b711dd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.83e651aa79ab087209b9b7d00e236fd1.js": "/precache-manifest.83e651aa79ab087209b9b7d00e236fd1.js",
+    "precache-manifest.dd3b48025fff2aae7638c56726bcb721.js": "/precache-manifest.dd3b48025fff2aae7638c56726bcb721.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c3ef4df4.chunk.css.map": "/static/css/main.c3ef4df4.chunk.css.map",
-    "static/js/2.09289fc2.chunk.js.LICENSE.txt": "/static/js/2.09289fc2.chunk.js.LICENSE.txt",
+    "static/js/2.60b711dd.chunk.js.LICENSE.txt": "/static/js/2.60b711dd.chunk.js.LICENSE.txt",
     "static/media/Background.svg": "/static/media/Background.93481aef.svg",
     "static/media/Facebook.d00b8dd0.svg": "/static/media/Facebook.d00b8dd0.svg",
     "static/media/Github.652e4dc2.svg": "/static/media/Github.652e4dc2.svg",
@@ -19,6 +19,7 @@
     "static/media/index.css": "/static/media/YesevaOne-Regular.0f18d3f4.ttf",
     "static/media/LinkedIn.e303c300.svg": "/static/media/LinkedIn.e303c300.svg",
     "static/media/Logo.6ea79a9e.svg": "/static/media/Logo.6ea79a9e.svg",
+    "static/media/Lung.png": "/static/media/Lung.cb0e860d.png",
     "static/media/Mail.b9b68651.svg": "/static/media/Mail.b9b68651.svg",
     "static/media/Portrait.png": "/static/media/Portrait.6b10e8cf.png",
     "static/media/Triangle.f61274f1.svg": "/static/media/Triangle.f61274f1.svg",
@@ -26,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bfca2edd.js",
-    "static/js/2.09289fc2.chunk.js",
+    "static/js/2.60b711dd.chunk.js",
     "static/css/main.c3ef4df4.chunk.css",
-    "static/js/main.b892dab8.chunk.js"
+    "static/js/main.9db6ff31.chunk.js"
   ]
 }
