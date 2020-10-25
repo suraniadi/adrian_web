@@ -32,7 +32,7 @@ const IconStyle = css`
   ${(props) =>
     props.marginright &&
     `
-    margin-right: ${props.marginright};`}
+    margin-right: ${props.marginright}px;`}
 
   ${(props) =>
     props.color &&
@@ -56,8 +56,8 @@ const IconStyle = css`
 `;
 
 const Background = styled.div`
-  width: 2843px;
-  height: 3450px;
+  width: 2443px;
+  height: 3150px;
 
   position: absolute;
   top: 0px;
@@ -66,7 +66,7 @@ const Background = styled.div`
 
   ${down("tablet")} {
     width: 2800px;
-    height: 3800px;
+    height: 4000px;
     left: -1200px;
     top: -400px;
   }
@@ -107,6 +107,7 @@ const Github = styled(GithubSource)`
 const Arrow = styled(ArrowSource)`
   ${IconStyle}
 `;
+
 
 export default {
   Background,

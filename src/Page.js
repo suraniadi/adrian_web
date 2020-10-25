@@ -33,25 +33,21 @@ const PageSpace = styled.div.attrs((props) => {
   let spaceHeight = {
     desktop: 0,
     tablet: 0,
-    mobile: 0,
   };
 
   let spaceWidth = {
     desktop: 0,
     tablet: 0,
-    mobile: 0,
   };
 
   if (props.height) {
     if (props.height instanceof Array) {
       spaceHeight.desktop = props.height[0];
       spaceHeight.tablet = props.height[1] || props.height[0];
-      spaceHeight.mobile =
-        props.height[2] || props.height[1] || props.height[0];
+      
     } else {
       spaceHeight.desktop = props.height;
       spaceHeight.tablet = props.height;
-      spaceHeight.mobile = props.height;
     }
   }
 

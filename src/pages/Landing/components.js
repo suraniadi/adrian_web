@@ -9,7 +9,6 @@ export const NoScrollHtmlStyle = createGlobalStyle`
 
 export const ContentContainer = styled.div`
   width: 100%;
-  min-height: 650px;
   padding: 0px 40px;
   position: relative;
 
@@ -19,9 +18,10 @@ export const ContentContainer = styled.div`
   align-items: flex-start;
 
   ${down("tablet")} {
+    min-height: 700px;
     padding: 0px 25px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 
@@ -33,11 +33,12 @@ export const TextContainer = styled.div`
 `;
 
 export const WorkplacesContainer = styled.div`
-  width: auto;
+  width: 800px;
 
   padding: 0px 40px;
 
   ${down("tablet")} {
+    width: 320px;
     padding: 0px 25px;
   }
 
@@ -78,7 +79,7 @@ export const TabLine = styled.div`
   height: 4px;
 
   transform: translateX(calc(${(props) => props.selectedTab} * 170px));
-  transition: all 0.5s ease-out 0.4s;
+  transition: all 0.2s ease-in-out 0.3s;
 
   ${down("tablet")} {
     width: 75px;
@@ -123,23 +124,43 @@ export const Description = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-  width: 700px;
-  margin-right: auto;
-  min-height: 350px;
+  width: 100%;
 
   padding: 0px 40px;
 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+
   ${down("tablet")} {
-    width: auto;
     padding: 0px 25px;
-    min-height: 550px;
+    min-height: 1110px;
+    flex-direction: column;
   }
+`;
+
+export const AboutTextContainer = styled.div`
+  width: 75%;
+  min-height: 400px;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+
+  ${down("tablet")} {
+    width: 100%;
+    min-height: 680px;
+  }
 `;
+
+export const AboutText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+`
 
 export const TechnologiesContainer = styled.div`
   max-width: 550px;
@@ -168,8 +189,8 @@ export const TechStack = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-  width: 600px;
-  min-height: 400px;
+  width: 800px;
+  min-height: 450px;
   padding: 0px 40px;
 
   display: flex;
@@ -239,15 +260,16 @@ export const JobDescription = styled.div`
   align-items: flex-start;
 `;
 
-export const JobTitle = styled.div`
-  margin-left: 23.25px;
-`;
 
 export const BgWrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 3230px;
+  height: 2920px;
   overflow: hidden;
+
+  ${down("tablet")} {
+  height: 3850px;
+  }
 `;
 
 export const BlurrEffect = styled.div`
@@ -263,3 +285,31 @@ export const BlurrEffect = styled.div`
     filter : blur(3px);
   `}
 `;
+
+export const ContactText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 90px;
+`
+
+export const LungsContainer = styled.div`
+  width: 300px;
+  height: 400px;
+  transition: all 0.2s ease-in-out 0.1s;
+
+  &:hover {
+    transform : scale(1.1);
+  }
+`
+
+export const LungsImage = styled.img`
+  width: 400px;
+  height: 300px;
+
+  ${down("tablet")} {
+    width: 300px;
+    height: 230px;
+  }
+`

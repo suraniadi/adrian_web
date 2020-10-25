@@ -8,6 +8,7 @@ import Text from "../../components/Text";
 import Avatar from "../../components/Avatar";
 import Separator from "../../components/Separator";
 import { Button } from "../../components/Button";
+import LungsSource from "./img/Lung.png";
 
 class Landing extends React.Component {
   state = {
@@ -147,10 +148,10 @@ class Landing extends React.Component {
               />
             </PageComponents.TextContainer>
 
-            <Avatar titleTrans executionTime={2} delayTime={90} />
+            <Avatar isPortrait titleTrans executionTime={2} delayTime={90} />
           </PageComponents.ContentContainer>
 
-          <Page.PageSpace height={300} />
+          <Page.PageSpace height={[250, 150]} />
 
           <Fade duration={1200} distance="100px" bottom>
             <>
@@ -163,6 +164,7 @@ class Landing extends React.Component {
                   <PageComponents.TitlesContainer>
                     {workplaces.map((workplace, idx) => (
                       <Button
+                        faded
                         key={idx}
                         label={workplace}
                         selected={idx === this.state.selectedTab}
@@ -181,14 +183,12 @@ class Landing extends React.Component {
                 <Page.PageSpace height={30} />
                 <PageComponents.WorktentContainer>
                   <PageComponents.JobDescription>
-                    <PageComponents.JobTitle>
                       <Text
                         text={selectedWorkspace.jobName}
                         extraLarge
                         isTitle
                         purple
                       />
-                    </PageComponents.JobTitle>
                     <Page.PageSpace height={20} />
                     {selectedWorkspace.descriptions.map((desc, idx) => (
                       <PageComponents.Description key={idx}>
@@ -217,7 +217,7 @@ class Landing extends React.Component {
             </>
           </Fade>
 
-          <Page.PageSpace height={300} />
+          <Page.PageSpace height={[250, 150]} />
 
           <Fade duration={1200} distance="100px" bottom>
             <>
@@ -226,24 +226,37 @@ class Landing extends React.Component {
               <Page.PageSpace height={40} />
 
               <PageComponents.AboutContainer>
+
+              <PageComponents.AboutTextContainer>
                 <Text
                   text={
-                    "Hello! I’m Adrian, a Software Engineer studying in London, UK."
+                    "I am Adrian, currently studying @ King's College London, UK."
+                  }
+                  extraLarge
+                  isTitle
+                  semifaded
+                />
+
+                <PageComponents.AboutText>
+                <Text
+                  text={
+                    "Learning about what makes a great engineer and understanding the underlying principles is paramount to me!"
                   }
                   large
                 />
                 <Text
                   text={
-                    "Learning about what makes a great engineer, understanding the underlying principles and experimenting are paramount to me!"
+                    "One of the principles that I've learned and practices during the last year is 'experimentation'. I had the opportunity to experiment with a lot of technologies, as part of my part-time job as a tutor and discovered many opportunities that I could explore in the future."
                   }
                   large
                 />
                 <Text
                   text={
-                    "I started out with logic puzzles as a kid, moved on to algorithms and data structures during high-school and soon discovered that I really enjoy building and analyzing well-designed websites and applications."
+                    "I am also passionate about breathwork, yoga and movement, as I feel they are usually the practices that keep me healthy & sustain my work for long periods of time."
                   }
                   large
                 />
+                </PageComponents.AboutText>
                 <PageComponents.TechStack>
                   <Text
                     text={
@@ -263,27 +276,40 @@ class Landing extends React.Component {
                     ))}
                   </PageComponents.TechnologiesContainer>
                 </PageComponents.TechStack>
-              </PageComponents.AboutContainer>
+              </PageComponents.AboutTextContainer>
+
+              <PageComponents.LungsContainer>
+                <PageComponents.LungsImage src={LungsSource}/>
+              </PageComponents.LungsContainer>       
+      </PageComponents.AboutContainer>
             </>
           </Fade>
-          <Page.PageSpace height={300} />
+          <Page.PageSpace height={[250, 150]} />
 
           <Fade duration={1200} distance="100px" bottom>
             <>
-              <Separator label={"Contact me."} width={600} lineWidth={250} />
+              <Separator label={"Contact me."} width={800} lineWidth={250} />
 
               <Page.PageSpace height={40} />
 
               <PageComponents.ContactContainer>
+                <PageComponents.ContactText>
                 <Text
-                  text=" I am looking forward to new challenges and oportunities to explore the tech world! If you need any help with building a website or mobile app or you just want to ask me a question, please do email me!"
-                  center
-                  maxWidth={700}
-                  size={[20, 16]}
-                  lineHeight={[25, 18]}
+                  text=" Looking forward to new oportunities in the tech world! "
+                  
+                  maxWidth={800}
+                  semifaded
+                  isTitle
+                  large
                 />
+                <Text
+                  text="If you need any help with building an application, or if you want to share some thoughts, please do email me!"
+                  maxWidth={800}
+                  large
+                />
+                </PageComponents.ContactText>
 
-                <Avatar />
+                <Avatar isPortrait/>
 
                 <PageComponents.LogosContainer>
                   <a

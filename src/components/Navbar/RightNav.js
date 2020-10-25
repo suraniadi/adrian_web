@@ -15,7 +15,7 @@ const RightNav = (props) => {
             <Text
               text={"Experience"}
               onClick={() => {
-                props.onLinkScrollClick(1030);
+                props.onLinkScrollClick(690);
               }}
               hoverable
               titleTrans
@@ -25,7 +25,7 @@ const RightNav = (props) => {
             <Text
               text={"About"}
               onClick={() => {
-                props.onLinkScrollClick(1800);
+                props.onLinkScrollClick(1440);
               }}
               hoverable
               titleTrans
@@ -35,7 +35,7 @@ const RightNav = (props) => {
             <Text
               text={"Contact"}
               onClick={() => {
-                props.onLinkScrollClick(2600);
+                props.onLinkScrollClick(2210);
               }}
               hoverable
               titleTrans
@@ -47,7 +47,7 @@ const RightNav = (props) => {
             <Text
               text={"Experience"}
               onClick={() => {
-                props.onLinkScrollClick(1050);
+                props.onLinkScrollClick(1020);
                 props.burgerToggle();
               }}
               hoverable
@@ -58,7 +58,7 @@ const RightNav = (props) => {
             <Text
               text={"About"}
               onClick={() => {
-                props.onLinkScrollClick(2000);
+                props.onLinkScrollClick(1850);
                 props.burgerToggle();
               }}
               hoverable
@@ -69,7 +69,7 @@ const RightNav = (props) => {
             <Text
               text={"Contact"}
               onClick={() => {
-                props.onLinkScrollClick(2890);
+                props.onLinkScrollClick(3190);
                 props.burgerToggle();
               }}
               hoverable
