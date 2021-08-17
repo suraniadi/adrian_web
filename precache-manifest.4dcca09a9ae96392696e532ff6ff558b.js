@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cda4738741268e2b13df6b157f9c9b5a",
+    "revision": "e0ddc9de06c341eab74018a6ed9461c9",
     "url": "/index.html"
   },
   {
-    "revision": "795dcef7601d0cf57588",
+    "revision": "7f6d883da43c5fa3c3dc",
     "url": "/static/css/main.c3ef4df4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.60b711dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "795dcef7601d0cf57588",
-    "url": "/static/js/main.52b7d6f2.chunk.js"
+    "revision": "7f6d883da43c5fa3c3dc",
+    "url": "/static/js/main.bc45d310.chunk.js"
   },
   {
     "revision": "6981919806c089cef906",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Facebook.d00b8dd0.svg"
   },
   {
-    "revision": "652e4dc279e59984f6d5322ecfeba69f",
-    "url": "/static/media/Github.652e4dc2.svg"
+    "revision": "609916802504395bf7900ed709c3b7b0",
+    "url": "/static/media/Github.60991680.svg"
   },
   {
     "revision": "6dd729303dde964f0891b233252c8834",
