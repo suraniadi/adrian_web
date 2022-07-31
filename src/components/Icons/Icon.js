@@ -64,7 +64,7 @@ const Background = styled.div`
   left: -800px;
   z-index: -1;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 2800px;
     height: 4000px;
     left: -1200px;

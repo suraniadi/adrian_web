@@ -42,7 +42,7 @@ const ButtonLabel = styled.p`
     props.workplace &&
     css`
       font-size: 16px;
-      ${down("tablet")} {
+      ${down("md")} {
         font-size: 14px;
       }
     `}
@@ -129,7 +129,7 @@ const ButtonContainer = styled.div`
   ${(props) =>
     props.minWidthMobile > 0 &&
     css`
-      ${down("tablet")} {
+      ${down("md")} {
         min-width: ${props.minWidthMobile}px;
       }
     `}

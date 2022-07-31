@@ -22,7 +22,7 @@ export const ContentContainer = styled.div`
         margin-left: auto;
     `}
 
-    ${down("tablet")} {
+    ${down("md")} {
     width: auto;
     padding: 0px 25px;
   }
@@ -41,7 +41,7 @@ export const Line = styled.div`
         width: ${props.lineWidth}px;
     `}
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 140px;
     margin-left: 10px;
   }

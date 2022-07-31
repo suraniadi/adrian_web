@@ -52,7 +52,7 @@ const AvatarPhoto = styled.div`
   width: ${(props) => (props.small ? 100 : 270)}px;
   height: ${(props) => (props.small ? 100 : 270)}px;
 
-  ${(props) => !props.width && down("tablet")} {
+  ${(props) => !props.width && down("md")} {
     height: ${(props) => (props.small ? 90 : 160)}px;
     width: ${(props) => (props.small ? 90 : 160)}px;
   }
@@ -73,7 +73,7 @@ const AvatarPhoto = styled.div`
     width: ${(props) => (props.small ? 100 : 270)}px;
     height: ${(props) => (props.small ? 100 : 270)}px;
 
-    ${(props) => !props.width && down("tablet")} {
+    ${(props) => !props.width && down("md")} {
       height: ${(props) => (props.small ? 90 : 160)}px;
       width: ${(props) => (props.small ? 90 : 160)}px;
     }

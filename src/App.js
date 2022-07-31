@@ -2,8 +2,8 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
-  Switch,
+  Navigate,
+  Routes,
 } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -18,10 +18,10 @@ class App extends React.Component {
             <title>Adrian Surani</title>
           </Helmet>
           <Router>
-            <Switch>
-              <Route path="/" exact component={Landing} />
-              <Redirect to="/" />
-            </Switch>
+            <Routes>
+              <Route path="/" exact element={<Landing/>} />
+              <Route elem = {<Navigate to="/" />} />
+            </Routes>
           </Router>
         </HelmetProvider>
       </>

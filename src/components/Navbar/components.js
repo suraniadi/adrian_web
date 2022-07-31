@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
     padding: 30px 50px;
   `}
 
-  ${down("tablet")} {
+  ${down("md")} {
     padding: 15px 25px;
   }
 `;

@@ -15,7 +15,7 @@ const Container = styled.div`
   padding: 0px 15px;
   min-height: 100vh;
 
-  ${down("tablet")} {
+  ${down("md")} {
     padding: 0px 5px;
   }
 `;
@@ -74,7 +74,7 @@ const PageSpace = styled.div.attrs((props) => {
   height: ${(props) =>
     props.spaceHeight.desktop ? `${props.spaceHeight.desktop}px` : "100%"};
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: ${(props) =>
       props.spaceWidth.tablet ? `${props.spaceWidth.tablet}px` : "100%"};
     height: ${(props) =>

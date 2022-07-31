@@ -99,7 +99,7 @@ const Content = styled.div`
         linear;
     `}
 
-    ${down("tablet")} {
+    ${down("md")} {
     font-size: ${(props) => props.bodySize.tablet}px;
     line-height: ${(props) => props.lineHeight.tablet}px;
 

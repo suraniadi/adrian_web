@@ -17,7 +17,7 @@ export const ContentContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
 
-  ${down("tablet")} {
+  ${down("md")} {
     min-height: 700px;
     padding: 0px 25px;
     flex-direction: column;
@@ -37,7 +37,7 @@ export const WorkplacesContainer = styled.div`
 
   padding: 0px 40px;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 320px;
     padding: 0px 25px;
   }
@@ -57,7 +57,7 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 300px;
   }
 `;
@@ -81,7 +81,7 @@ export const TabLine = styled.div`
   transform: translateX(calc(${(props) => props.selectedTab} * 170px));
   transition: all 0.2s ease-in-out 0.3s;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 75px;
     transform: translateX(calc(${(props) => props.selectedTab} * 75px));
   }
@@ -133,7 +133,7 @@ export const AboutContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
 
-  ${down("tablet")} {
+  ${down("md")} {
     padding: 0px 25px;
     min-height: 1110px;
     flex-direction: column;
@@ -149,7 +149,7 @@ export const AboutTextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 100%;
     min-height: 680px;
   }
@@ -198,7 +198,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: auto;
     padding: 0px 25px;
   }
@@ -215,7 +215,7 @@ export const LogosContainer = styled.div`
 
   max-width: 300px;
 
-  ${down("tablet")} {
+  ${down("md")} {
     max-width: 250px;
   }
 `;
@@ -245,7 +245,7 @@ export const IconsHandler = styled.div`
     transform: translate3d(0, 0, 0);
   }
 
-  ${down("tablet")} {
+  ${down("md")} {
     pointer-events: none;
   }
 `;
@@ -267,7 +267,7 @@ export const BgWrapper = styled.div`
   height: 2920px;
   overflow: hidden;
 
-  ${down("tablet")} {
+  ${down("md")} {
   height: 3850px;
   }
 `;
@@ -308,7 +308,7 @@ export const LungsImage = styled.img`
   width: 400px;
   height: 300px;
 
-  ${down("tablet")} {
+  ${down("md")} {
     width: 300px;
     height: 230px;
   }
